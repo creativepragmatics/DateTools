@@ -170,9 +170,6 @@ static NSCalendar *implicitCalendar = nil;
     else if (components.minute >= 1) {
         return DateToolsLocalizedStrings(@"A minute ago");
     }
-    else if (components.second >= 3) {
-        return [self logicLocalizedStringFromFormat:@"%%d %@seconds ago" withValue:components.second];
-    }
     else {
         return DateToolsLocalizedStrings(@"Just now");
     }
